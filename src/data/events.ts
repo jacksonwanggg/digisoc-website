@@ -8,6 +8,8 @@ export interface DigiEvent {
   registrationUrl: string;
 }
 
+const RUBRIC_URL = "https://campus.hellorubric.com/?s=6334";
+
 export const events: DigiEvent[] = [
   {
     id: 1,
@@ -17,7 +19,7 @@ export const events: DigiEvent[] = [
     date: "2026-03-10",
     time: "6:00 PM - 8:00 PM",
     location: "Ainsworth Building G03",
-    registrationUrl: "#",
+    registrationUrl: RUBRIC_URL,
   },
   {
     id: 2,
@@ -27,7 +29,7 @@ export const events: DigiEvent[] = [
     date: "2026-03-18",
     time: "5:30 PM - 7:30 PM",
     location: "Tyree Energy Technologies Building",
-    registrationUrl: "#",
+    registrationUrl: RUBRIC_URL,
   },
   {
     id: 3,
@@ -37,7 +39,7 @@ export const events: DigiEvent[] = [
     date: "2026-04-05",
     time: "9:00 AM (Sat) - 9:00 AM (Mon)",
     location: "John Niland Scientia Building",
-    registrationUrl: "#",
+    registrationUrl: RUBRIC_URL,
   },
   {
     id: 4,
@@ -47,7 +49,7 @@ export const events: DigiEvent[] = [
     date: "2026-04-15",
     time: "6:00 PM - 8:30 PM",
     location: "Red Centre East Wing",
-    registrationUrl: "#",
+    registrationUrl: RUBRIC_URL,
   },
   {
     id: 5,
@@ -57,7 +59,7 @@ export const events: DigiEvent[] = [
     date: "2026-04-22",
     time: "6:00 PM - 8:00 PM",
     location: "Ainsworth Building G03",
-    registrationUrl: "#",
+    registrationUrl: RUBRIC_URL,
   },
   {
     id: 6,
@@ -67,6 +69,6 @@ export const events: DigiEvent[] = [
     date: "2026-05-10",
     time: "5:00 PM - 8:00 PM",
     location: "Roundhouse Bar & Grill",
-    registrationUrl: "#",
+    registrationUrl: RUBRIC_URL,
   },
 ];

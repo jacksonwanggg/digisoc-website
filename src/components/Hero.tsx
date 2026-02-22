@@ -4,12 +4,21 @@ import StarField from "./StarField";
 import FloatingOrbs from "./FloatingOrbs";
 import MagneticButton from "./MagneticButton";
 
+const RUBRIC_URL = "https://campus.hellorubric.com/?s=6334";
+
 export default function Hero() {
   const parallaxRef = useRef<HTMLDivElement>(null);
   const [canHover, setCanHover] = useState(false);
+  const [stagger, setStagger] = useState(false);
 
   useEffect(() => {
     setCanHover(window.matchMedia("(hover: hover)").matches);
+    const played = sessionStorage.getItem("digisoc-entrance-played");
+    if (!played) {
+      setStagger(true);
+    } else {
+      setStagger(true);
+    }
   }, []);
 
   const handleMouseMove = useCallback(
@@ -43,13 +52,24 @@ export default function Hero() {
       ref={parallaxRef}
       onMouseMove={handleMouseMove}
     >
+      <div className="hero-photo-bg">
+        <div className="photo-placeholder-inner">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.4">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+            <circle cx="8.5" cy="8.5" r="1.5" />
+            <polyline points="21 15 16 10 5 21" />
+          </svg>
+          <span>DigiSoc Group Photo</span>
+        </div>
+      </div>
+      <div className="hero-overlay" />
+
       <StarField count={50} />
       <FloatingOrbs variant="hero" />
       <div className="hero-grid" />
-      <div className="blob blob-purple hero-blob-1 animate-pulse" />
-      <div className="blob blob-pink hero-blob-2 animate-float" />
 
-      <div className="container hero-content">
+      <div className={`container hero-content ${stagger ? "hero-stagger" : ""}`}>
+        <img src="/digisocLogo.jpeg" alt="DigiSoc Logo" className="hero-logo" />
         <span className="hero-badge">UNSW Digital Society</span>
         <h1>
           Empowering the Next Generation of{" "}
@@ -57,7 +77,7 @@ export default function Hero() {
         </h1>
         <p>
           The UNSW Digital Society aims to empower students interested in all
-          things digital by building the skills required to succeed in today's
+          things digital by building the skills required to succeed in today&apos;s
           tech-driven world.
         </p>
         <div className="hero-buttons">
@@ -68,9 +88,20 @@ export default function Hero() {
           </Link>
           <Link to="/contact">
             <MagneticButton className="btn-outline">
-              Join the Community
+              Join Us
             </MagneticButton>
           </Link>
+          <a href={RUBRIC_URL} target="_blank" rel="noopener noreferrer">
+            <MagneticButton className="btn-rubric">
+              <img src="/rubric logo.png" alt="" width="20" height="20" />
+              Find Us on Rubric
+              <svg className="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+            </MagneticButton>
+          </a>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
-import TeamCard from "../components/TeamCard";
+import ExecCarousel from "../components/ExecCarousel";
+import ImagePlaceholder from "../components/ImagePlaceholder";
 import ScrollReveal from "../components/ScrollReveal";
 import { team } from "../data/team";
 
@@ -22,13 +23,22 @@ export default function Team() {
 
       <section className="section">
         <div className="container">
-          <div className="grid-4">
-            {team.map((member, i) => (
-              <ScrollReveal key={member.id} delay={i * 100}>
-                <TeamCard member={member} />
-              </ScrollReveal>
-            ))}
-          </div>
+          <ScrollReveal>
+            <ExecCarousel members={team} />
+          </ScrollReveal>
+
+          <ScrollReveal delay={200}>
+            <div style={{ marginTop: "4rem", textAlign: "center" }}>
+              <h2 className="section-title" style={{ marginBottom: "2rem" }}>
+                About the <span className="gradient-text">Team</span>
+              </h2>
+              <ImagePlaceholder
+                width="100%"
+                height="300px"
+                label="Team Group Photo"
+              />
+            </div>
+          </ScrollReveal>
         </div>
       </section>
     </>

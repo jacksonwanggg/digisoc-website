@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import EventCard from "../components/EventCard";
-import TeamCard from "../components/TeamCard";
+import ExecCarousel from "../components/ExecCarousel";
+import Gallery from "../components/Gallery";
 import ScrollReveal from "../components/ScrollReveal";
 import AnimatedCard from "../components/AnimatedCard";
 import FloatingOrbs from "../components/FloatingOrbs";
@@ -11,7 +12,6 @@ import { team } from "../data/team";
 
 export default function Home() {
   const featuredEvents = events.slice(0, 3);
-  const featuredTeam = team.slice(0, 4);
 
   return (
     <>
@@ -34,14 +34,7 @@ export default function Home() {
               <AnimatedCard className="" delay={0}>
                 <div style={{ textAlign: "center" }}>
                   <div style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
-                    <svg
-                      width="40"
-                      height="40"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#7C5CFC"
-                      strokeWidth="2"
-                    >
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="2">
                       <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
                       <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
                     </svg>
@@ -58,14 +51,7 @@ export default function Home() {
               <AnimatedCard className="" delay={0}>
                 <div style={{ textAlign: "center" }}>
                   <div style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
-                    <svg
-                      width="40"
-                      height="40"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#FF6584"
-                      strokeWidth="2"
-                    >
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2">
                       <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
                       <circle cx="9" cy="7" r="4" />
                       <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
@@ -84,14 +70,7 @@ export default function Home() {
               <AnimatedCard className="" delay={0}>
                 <div style={{ textAlign: "center" }}>
                   <div style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>
-                    <svg
-                      width="40"
-                      height="40"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#43E8C3"
-                      strokeWidth="2"
-                    >
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" strokeWidth="2">
                       <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                     </svg>
                   </div>
@@ -113,6 +92,8 @@ export default function Home() {
           </ScrollReveal>
         </div>
       </section>
+
+      <Gallery />
 
       <section className="section home-events-preview">
         <div className="container">
@@ -152,14 +133,10 @@ export default function Home() {
               The dedicated executives making it all happen.
             </p>
           </ScrollReveal>
-          <div className="grid-4">
-            {featuredTeam.map((member, i) => (
-              <ScrollReveal key={member.id} delay={i * 100}>
-                <TeamCard member={member} />
-              </ScrollReveal>
-            ))}
-          </div>
-          <ScrollReveal delay={400}>
+          <ScrollReveal delay={100}>
+            <ExecCarousel members={team} />
+          </ScrollReveal>
+          <ScrollReveal delay={300}>
             <div className="section-link">
               <Link to="/team" className="btn btn-outline">
                 View Full Team
