@@ -190,3 +190,25 @@ Ralph Session Started: Sun Feb 22 16:00:53 AEDT 2026
 [16:06:19] 🟡 SHELL npm run build 2>&1 → exit 0
 [16:06:32] 🟡 SHELL npm run build 2>&1 → exit 0
 [16:06:47] 🟡 TOKENS: 54577 / 80000 (68%) [read:208KB write:0KB assist:1KB shell:0KB]
+[16:06:49] 🟡 SHELL git add -A && git commit --trailer "Co-authored-by: Cursor <cursoragent@cursor.com>" -m "$(cat <<'EOF'
+ralph: complete DigiSoc purple space theme overhaul
+
+- Update CSS color palette to official DigiSoc purple/violet theme
+- Add gradient backgrounds (hero, page headers, CTA sections)
+- Create MouseGlow component with lerp-based cursor following
+- Add mouse-driven parallax on Hero background elements
+- Create AnimatedCard with 3D tilt effect and shine overlay
+- Create MagneticButton with subtle pull effect
+- Create StarField (floating star particles) for hero and footer
+- Create FloatingOrbs (animated ambient orbs) for hero and CTA
+- Add ScrollReveal with IntersectionObserver for fade-in animations
+- Add animated gradient border shimmer on cards
+- Update Navbar with frosted glass and scroll-aware darkening
+- All animations use GPU-composited properties (transform/opacity)
+- Mouse effects disabled on touch/mobile via hover media query
+- prefers-reduced-motion fully respected
+- New hooks: useMousePosition, useInView, useTilt
+- No external animation libraries used
+- No `any` types in new code
+EOF
+)" → exit 0

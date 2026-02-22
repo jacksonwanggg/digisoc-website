@@ -181,23 +181,23 @@ src/
 
 ## ✅ Success Criteria
 
-1. [ ] Color palette updated to DigiSoc purple/space theme across all CSS variables
-2. [ ] Gradient backgrounds updated (hero, page headers, CTA sections)
-3. [ ] Mouse glow follower works smoothly across the site
-4. [ ] Hero section has mouse-driven parallax on background elements
-5. [ ] Cards have 3D tilt effect on hover with shine overlay
-6. [ ] CTA buttons have magnetic hover effect
-7. [ ] Star particles float in hero and footer backgrounds
-8. [ ] Floating orbs animate in hero section
-9. [ ] All content fades in on scroll with staggered timing
-10. [ ] Cards have animated gradient border shimmer
-11. [ ] Navbar has proper frosted glass with scroll-aware darkening
-12. [ ] All animations use GPU-composited properties only (transform/opacity)
-13. [ ] Mouse effects disabled on touch/mobile devices
-14. [ ] `prefers-reduced-motion` respected — animations disabled for users who prefer it
-15. [ ] `npm run build` succeeds with no TypeScript errors
-16. [ ] No `any` types used in new code
-17. [ ] Site remains fully responsive on mobile
+1. [x] Color palette updated to DigiSoc purple/space theme across all CSS variables
+2. [x] Gradient backgrounds updated (hero, page headers, CTA sections)
+3. [x] Mouse glow follower works smoothly across the site
+4. [x] Hero section has mouse-driven parallax on background elements
+5. [x] Cards have 3D tilt effect on hover with shine overlay
+6. [x] CTA buttons have magnetic hover effect
+7. [x] Star particles float in hero and footer backgrounds
+8. [x] Floating orbs animate in hero section
+9. [x] All content fades in on scroll with staggered timing
+10. [x] Cards have animated gradient border shimmer
+11. [x] Navbar has proper frosted glass with scroll-aware darkening
+12. [x] All animations use GPU-composited properties only (transform/opacity)
+13. [x] Mouse effects disabled on touch/mobile devices
+14. [x] `prefers-reduced-motion` respected — animations disabled for users who prefer it
+15. [x] `npm run build` succeeds with no TypeScript errors
+16. [x] No `any` types used in new code
+17. [x] Site remains fully responsive on mobile
 
 ---
 
