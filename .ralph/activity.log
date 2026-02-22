@@ -116,3 +116,19 @@ Ralph Session Started: Sun Feb 22 15:48:14 AEDT 2026
 [15:52:14] 🟢 TOKENS: 10867 / 80000 (13%) [read:38KB write:0KB assist:1KB shell:0KB]
 [15:52:16] 🟢 SHELL cd /Users/kahowang/projects/digibox-ralph && rm -f src/assets/react.svg src/App.css 2>/dev/null; ls src/assets/ 2>/dev/null → exit 0
 [15:52:22] 🟢 SHELL cd /Users/kahowang/projects/digibox-ralph && npm run build 2>&1 → exit 0
+[15:52:32] 🟢 SHELL cd /Users/kahowang/projects/digibox-ralph && echo "node_modules\ndist" >> .gitignore && git add -A && git status → exit 0
+[15:52:41] 🟢 SHELL cd /Users/kahowang/projects/digibox-ralph && git commit --trailer "Co-authored-by: Cursor <cursoragent@cursor.com>" -m "$(cat <<'EOF'
+ralph: build complete UNSW DigiSoc website with Vite + React + TypeScript
+
+- Move scaffolded project from digibox/ to repo root
+- Add react-router-dom with 5 routes: /, /about, /events, /team, /contact
+- Create typed mock data for events and team members (no any types)
+- Build reusable components: Navbar, Footer, Hero, EventCard, TeamCard, SocialIcons
+- Implement full pages: Home (hero + previews + CTA), About, Events, Team, Contact
+- Dark theme with gradient accents, glassmorphism cards, CSS blobs
+- Fully responsive: mobile hamburger menu, fluid grids, clamp typography
+- Social links (Instagram, LinkedIn, Facebook) with SVG icons in header + footer
+- npm run build succeeds with zero TypeScript errors
+EOF
+)" → exit 0
+[15:52:48] 🟢 TOKENS: 10939 / 80000 (13%) [read:38KB write:0KB assist:1KB shell:0KB]

@@ -190,16 +190,16 @@ No `any`.
 
 ## 🧠 Success Criteria
 
-1. [ ] `npm run build` succeeds with no TypeScript errors
-2. [ ] All routes render correctly
-3. [ ] Site is fully responsive on mobile
-4. [ ] Social links are visible and clickable
-5. [ ] Events are rendered from typed mock data
-6. [ ] Team members render from typed mock data
-7. [ ] No `any` types used
-8. [ ] Clean, reusable component structure
-9. [ ] Modern, polished UI aesthetic
-10. [ ] Layout does not break on small screens
+1. [x] `npm run build` succeeds with no TypeScript errors
+2. [x] All routes render correctly
+3. [x] Site is fully responsive on mobile
+4. [x] Social links are visible and clickable
+5. [x] Events are rendered from typed mock data
+6. [x] Team members render from typed mock data
+7. [x] No `any` types used
+8. [x] Clean, reusable component structure
+9. [x] Modern, polished UI aesthetic
+10. [x] Layout does not break on small screens
 
 ---
 
