@@ -5,12 +5,14 @@ interface AnimatedCardProps {
   children: ReactNode;
   className?: string;
   delay?: number;
+  onClick?: () => void;
 }
 
 export default function AnimatedCard({
   children,
   className = "",
   delay = 0,
+  onClick,
 }: AnimatedCardProps) {
   const [canHover, setCanHover] = useState(false);
   const { ref, shineRef, tiltHandlers } = useTilt<HTMLDivElement>();
@@ -23,8 +25,9 @@ export default function AnimatedCard({
 
   return (
     <div
-      className="tilt-card"
+      className={`tilt-card${onClick ? " tilt-card-clickable" : ""}`}
       style={style}
+      onClick={onClick}
       {...(canHover ? tiltHandlers : {})}
     >
       <div

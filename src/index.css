@@ -1546,6 +1546,9 @@ p {
   perspective: 800px;
   transform-style: preserve-3d;
 }
+.tilt-card-clickable {
+  cursor: pointer;
+}
 
 .tilt-card-inner {
   transition: transform 0.15s ease-out;

@@ -21,9 +21,8 @@ export default function EventCard({ event, delay = 0, past = false }: EventCardP
   };
 
   return (
-    <AnimatedCard className={`event-card ${past ? "event-card-past" : ""}`} delay={delay}>
-      {/* biome-ignore lint/a11y/useKeyWithClickEvents: card is supplementary to inner link */}
-      <div className="event-card-link" onClick={handleCardClick} role="link" tabIndex={-1}>
+    <AnimatedCard className={`event-card ${past ? "event-card-past" : ""}`} delay={delay} onClick={handleCardClick}>
+      <div className="event-card-link">
       {event.image ? (
         <img
           src={event.image}
