@@ -3,77 +3,126 @@
 # DO NOT EDIT - regenerated on task file change
 
 source_file: RALPH_TASK.md
-source_mtime: 1771735968
-generated_at: 2026-02-22T04:53:20Z
+source_mtime: 1771736819
+generated_at: 2026-02-22T05:07:30Z
 
 tasks:
+  - id: "line_184"
+    line_number: 184
+    status: completed
+    parallel_group: 999999
+    description: Color palette updated to DigiSoc purple/space theme across all CSS variables
+    indent_level: 0
+    raw_marker: 1.
+  - id: "line_185"
+    line_number: 185
+    status: completed
+    parallel_group: 999999
+    description: Gradient backgrounds updated (hero, page headers, CTA sections)
+    indent_level: 0
+    raw_marker: 2.
+  - id: "line_186"
+    line_number: 186
+    status: completed
+    parallel_group: 999999
+    description: Mouse glow follower works smoothly across the site
+    indent_level: 0
+    raw_marker: 3.
+  - id: "line_187"
+    line_number: 187
+    status: completed
+    parallel_group: 999999
+    description: Hero section has mouse-driven parallax on background elements
+    indent_level: 0
+    raw_marker: 4.
+  - id: "line_188"
+    line_number: 188
+    status: completed
+    parallel_group: 999999
+    description: Cards have 3D tilt effect on hover with shine overlay
+    indent_level: 0
+    raw_marker: 5.
+  - id: "line_189"
+    line_number: 189
+    status: completed
+    parallel_group: 999999
+    description: CTA buttons have magnetic hover effect
+    indent_level: 0
+    raw_marker: 6.
+  - id: "line_190"
+    line_number: 190
+    status: completed
+    parallel_group: 999999
+    description: Star particles float in hero and footer backgrounds
+    indent_level: 0
+    raw_marker: 7.
+  - id: "line_191"
+    line_number: 191
+    status: completed
+    parallel_group: 999999
+    description: Floating orbs animate in hero section
+    indent_level: 0
+    raw_marker: 8.
+  - id: "line_192"
+    line_number: 192
+    status: completed
+    parallel_group: 999999
+    description: All content fades in on scroll with staggered timing
+    indent_level: 0
+    raw_marker: 9.
   - id: "line_193"
     line_number: 193
     status: completed
     parallel_group: 999999
-    description: `npm run build` succeeds with no TypeScript errors
+    description: Cards have animated gradient border shimmer
     indent_level: 0
-    raw_marker: 1.
+    raw_marker: 10.
   - id: "line_194"
     line_number: 194
     status: completed
     parallel_group: 999999
-    description: All routes render correctly
+    description: Navbar has proper frosted glass with scroll-aware darkening
     indent_level: 0
-    raw_marker: 2.
+    raw_marker: 11.
   - id: "line_195"
     line_number: 195
     status: completed
     parallel_group: 999999
-    description: Site is fully responsive on mobile
+    description: All animations use GPU-composited properties only (transform/opacity)
     indent_level: 0
-    raw_marker: 3.
+    raw_marker: 12.
   - id: "line_196"
     line_number: 196
     status: completed
     parallel_group: 999999
-    description: Social links are visible and clickable
+    description: Mouse effects disabled on touch/mobile devices
     indent_level: 0
-    raw_marker: 4.
+    raw_marker: 13.
   - id: "line_197"
     line_number: 197
     status: completed
     parallel_group: 999999
-    description: Events are rendered from typed mock data
+    description: `prefers-reduced-motion` respected — animations disabled for users who prefer it
     indent_level: 0
-    raw_marker: 5.
+    raw_marker: 14.
   - id: "line_198"
     line_number: 198
     status: completed
     parallel_group: 999999
-    description: Team members render from typed mock data
+    description: `npm run build` succeeds with no TypeScript errors
     indent_level: 0
-    raw_marker: 6.
+    raw_marker: 15.
   - id: "line_199"
     line_number: 199
     status: completed
     parallel_group: 999999
-    description: No `any` types used
+    description: No `any` types used in new code
     indent_level: 0
-    raw_marker: 7.
+    raw_marker: 16.
   - id: "line_200"
     line_number: 200
     status: completed
     parallel_group: 999999
-    description: Clean, reusable component structure
+    description: Site remains fully responsive on mobile
     indent_level: 0
-    raw_marker: 8.
-  - id: "line_201"
-    line_number: 201
-    status: completed
-    parallel_group: 999999
-    description: Modern, polished UI aesthetic
-    indent_level: 0
-    raw_marker: 9.
-  - id: "line_202"
-    line_number: 202
-    status: completed
-    parallel_group: 999999
-    description: Layout does not break on small screens
-    indent_level: 0
-    raw_marker: 10.
+    raw_marker: 17.
