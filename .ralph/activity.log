@@ -309,3 +309,23 @@ Ralph Session Started: Sun Feb 22 16:23:22 AEDT 2026
 [16:29:30] 🔴 READ /Users/kahowang/projects/digibox-ralph/src/App.tsx (54 lines, ~5.2KB)
 [16:29:44] 🔴 SHELL cd /Users/kahowang/projects/digibox-ralph && npm run build 2>&1 → exit 0
 [16:29:55] 🔴 TOKENS: 78193 / 80000 (97%) - rotation imminent [read:300KB write:0KB assist:1KB shell:0KB]
+[16:29:57] 🔴 SHELL cd /Users/kahowang/projects/digibox-ralph && git add -A && git commit --trailer "Co-authored-by: Cursor <cursoragent@cursor.com>" -m "$(cat <<'EOF'
+ralph: implement light/dark theme system, image placeholders, exec carousel, gallery, rubric links, entrance animations, star trail
+
+- Light mode default with CSS variables, dark mode toggle stored in localStorage
+- useTheme hook + ThemeToggle component (sun/moon) in navbar and mobile menu
+- DigiSoc logo used in navbar, hero, footer, and as favicon
+- Rubric logo + links in hero, events, footer, and contact page
+- ImagePlaceholder component used throughout for future photo slots
+- Gallery section with 6 photo placeholders on home page
+- ExecCarousel: horizontally swipeable with scroll snap, arrows, position dots
+- Team data expanded to 10 executives
+- Floating shapes burst entrance animation on first page load
+- Star/sparkle trail on mouse cursor (desktop only)
+- Navbar stagger + hero fade-up entry animations
+- Footer copyright notice: © DigiSoc 2026
+- All CSS refactored to theme-aware variables, no hardcoded colors
+- prefers-reduced-motion respected
+- Fully responsive design maintained
+EOF
+)" → exit 0
