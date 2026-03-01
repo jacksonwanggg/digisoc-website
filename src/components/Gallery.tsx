@@ -1,14 +1,7 @@
-import ImagePlaceholder from "./ImagePlaceholder";
 import ScrollReveal from "./ScrollReveal";
 
-const GALLERY_ITEMS = [
-  "DigiSoc Event Photo 1",
-  "Workshop Photo",
-  "Social Night",
-  "Hackathon Team",
-  "Industry Night",
-  "Team Building",
-];
+const base = typeof import.meta !== "undefined" && import.meta.env?.BASE_URL ? import.meta.env.BASE_URL : "/";
+const GALLERY_IMAGES = [1, 2, 3, 4, 5, 6].map((n) => `${base}galleryShowcase/pic${n}.png`);
 
 export default function Gallery() {
   return (
@@ -23,13 +16,11 @@ export default function Gallery() {
           </p>
         </ScrollReveal>
         <div className="gallery-grid">
-          {GALLERY_ITEMS.map((label, i) => (
-            <ScrollReveal key={label} delay={i * 80}>
-              <ImagePlaceholder
-                width="100%"
-                height="220px"
-                label={label}
-              />
+          {GALLERY_IMAGES.map((src, i) => (
+            <ScrollReveal key={src} delay={i * 80}>
+              <div className="gallery-item">
+                <img src={src} alt={`Gallery ${i + 1}`} className="gallery-img" />
+              </div>
             </ScrollReveal>
           ))}
         </div>

@@ -1,5 +1,6 @@
 import { useRef, useState, useCallback, useEffect } from "react";
 import type { TeamMember } from "../data/team";
+import { getExecPhotoUrl } from "../data/team";
 
 interface ExecCarouselProps {
   members: TeamMember[];
@@ -83,7 +84,11 @@ export default function ExecCarousel({ members }: ExecCarouselProps) {
           <div key={member.id} className="exec-carousel-card">
             <div className="exec-avatar" style={{ background: member.color }}>
               <div className="exec-avatar-ring" />
-              {getInitials(member.name)}
+              {member.photo ? (
+                <img src={getExecPhotoUrl(member.photo)} alt="" className="exec-avatar-img" />
+              ) : (
+                getInitials(member.name)
+              )}
             </div>
             <h3>{member.name}</h3>
             <p>{member.role}</p>

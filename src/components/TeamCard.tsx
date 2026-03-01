@@ -1,4 +1,5 @@
 import type { TeamMember } from "../data/team";
+import { getExecPhotoUrl } from "../data/team";
 import AnimatedCard from "./AnimatedCard";
 
 interface TeamCardProps {
@@ -16,7 +17,11 @@ export default function TeamCard({ member, delay = 0 }: TeamCardProps) {
     <AnimatedCard className="team-card" delay={delay}>
       <div className="team-card-avatar" style={{ background: member.color }}>
         <div className="team-card-avatar-ring" />
-        {initials}
+        {member.photo ? (
+          <img src={getExecPhotoUrl(member.photo)} alt="" className="team-card-avatar-img" />
+        ) : (
+          initials
+        )}
       </div>
       <h3>{member.name}</h3>
       <p>{member.role}</p>
