@@ -79,7 +79,12 @@ src/
 ### Data Layer
 
 Static data in `src/data/`:
-- `team.ts`: executive team profiles (used in `/team` and home carousel)
+- `team.ts`: executive team profiles and director portfolios
+  - `team` array: VP executives (shown in ExecCarousel)
+  - `directorTeams` array: portfolio directors organized by VP sections
+  - `portfolioStructure`: hierarchical structure of VP sections and portfolios
+  - VP Sections: Externals, Internals, Digital, Operations
+  - Each section has sub-portfolios (e.g., Operations → IT, Projects)
 - `events.ts`: event listings (used in `/events`)
 - `sponsors.ts`: sponsor information (used in `/sponsors`)
 

@@ -1,4 +1,5 @@
 import ExecCarousel from "../components/ExecCarousel";
+import PortfolioFilter from "../components/PortfolioFilter";
 import ScrollReveal from "../components/ScrollReveal";
 import { useDocumentMeta } from "../hooks/useDocumentMeta";
 import { team } from "../data/team";
@@ -32,20 +33,7 @@ export default function Team() {
           </ScrollReveal>
 
           <ScrollReveal delay={200}>
-            <div style={{ marginTop: "4rem", textAlign: "center" }}>
-              <h2 className="section-title" style={{ marginBottom: "2rem" }}>
-                About the <span className="gradient-text">Team</span>
-              </h2>
-              <img
-                src={`${import.meta.env.BASE_URL}execs.png`}
-                alt="Team Group Photo"
-                style={{
-                  width: "100%",
-                  borderRadius: "1rem",
-                  objectFit: "cover",
-                }}
-              />
-            </div>
+            <PortfolioFilter />
           </ScrollReveal>
         </div>
       </section>
